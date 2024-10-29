@@ -1,8 +1,11 @@
+import { Navbar,Footer } from "components";
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      <Navbar/>
+        Hello World
+      <Footer/>
     </div>
   );
 }
