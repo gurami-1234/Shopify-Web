@@ -1,11 +1,9 @@
-import { Navbar,Footer } from "components";
+import {MainLayout} from "layouts";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-        Hello World
-      <Footer/>
+      <MainLayout/>
     </div>
   );
 }

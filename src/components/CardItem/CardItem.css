@@ -1,0 +1,72 @@
+.card-item {
+  width: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  .image-place {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    .image {
+      width: 100%;
+
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .textures {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    line-height: 25px;
+    .category {
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      opacity: 0.8;
+    }
+    .title a {
+      font-size: 1.1rem;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .price-add {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5px;
+      .price {
+        .new-price {
+          color: #3b82f6;
+          font-size: 1.3rem;
+        }
+        .old-price {
+          color: rgba(0, 0, 0, 0.5);
+          margin-right: 5px;
+        }
+        .percentage {
+          color: black;
+          font-weight: bold;
+          font-size: 1rem;
+        }
+      }
+      .add-to-cart button {
+        width: 175px;
+        height: 40px;
+        background-color: #ec4899;
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #3b82f6;
+        }
+      }
+    }
+  }
+}
