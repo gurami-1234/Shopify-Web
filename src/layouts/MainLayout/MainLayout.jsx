@@ -1,15 +1,18 @@
-import React from 'react'
-import {  Footer, Navbar } from 'components'
-import './MainLayout.css'
-import ProductsLayout from 'layouts/ProductsLayout/ProductsLayout'
+import React from "react";
+import { Footer, Navbar } from "components";
+import { Outlet } from "react-router-dom";
+import "./MainLayout.css";
 const MainLayout = () => {
   return (
-    <div className='main-layout'>
-        <Navbar/>
-        <ProductsLayout title={'Trending Products'}/>
-        <Footer/>
-    </div>
-  )
-}
+    <div className="main-layout">
+      <Navbar />
+      <div className="outlet-place">
+        <Outlet />
+      </div>
 
-export default MainLayout
+      <Footer />
+    </div>
+  );
+};
+
+export default MainLayout;

@@ -2,7 +2,22 @@
   width: 100%;
   padding: 10px 0;
   background-color: white;
-
+  &.dark {
+    background-color: rgb(30, 41, 59);
+    .nav-container {
+      .logo a {
+        color: white;
+      }
+      .navigation {
+        a,
+        .user-icon,
+        .login,
+        .icon {
+          color: white;
+        }
+      }
+    }
+  }
   .nav-container {
     margin: 0 auto;
     width: 95%;
@@ -13,6 +28,10 @@
     .logo {
       font-size: 2rem;
       font-weight: bold;
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
     .search-container {
       display: flex;
@@ -51,6 +70,7 @@
         color: #6b7280;
       }
       .icon {
+        width: 25px;
         background-color: transparent;
         border: none;
         outline: none;
