@@ -1,0 +1,6 @@
+.children-structure {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  gap: 20px 0;
+}

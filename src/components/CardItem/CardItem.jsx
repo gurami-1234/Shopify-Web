@@ -1,26 +1,36 @@
 import React from "react";
 import image from "images/thumbnail.png";
 import "./CardItem.css";
-const CardItem = () => {
+import { Link } from "react-router-dom";
+const CardItem = ({
+  title,
+  category,
+  oldPrice,
+  discountPercentage,
+  thumbnail,
+  id,
+}) => {
+  const newPrice = oldPrice - oldPrice * (discountPercentage / 100);
   return (
     <div className="card-item">
       <div className="image-place">
-        <img src={image} alt="" className="image" />
+        <img src={thumbnail} alt="" className="image" />
       </div>
 
       <div className="textures">
-        <span className="category">beauty</span>
+        <span className="category">{category}</span>
         <p className="title">
-          <a href="#">Eyeshadow Palette with Mirror</a>
+          {/* <Link to={"/product/" + id}>{title}</Link> */}
+          <Link to={`/product/${id}`}>{title}</Link>
         </p>
         <div className="price-add">
           <div className="price">
-            <p className="new-price">$18.89</p>
+            <p className="new-price">${newPrice.toFixed(2)}</p>
             <p className="price-percentage">
               <span className="old-price">
-                <del>$19.99</del>
+                <del>{oldPrice}</del>
               </span>
-              <span className="percentage">-5.5%</span>
+              <span className="percentage">-{discountPercentage}%</span>
             </p>
           </div>
 
