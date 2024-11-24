@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 import { IoSunnyOutline } from "react-icons/io5";
 import "./Navbar.css";
 import { ThemeContext } from "contexts/ThemeContext/ThemeContext";
+import { AuthModalContext } from "contexts/AuthModalContext/AuthModalContext";
 const Navbar = () => {
   const { isDark, setIsDark } = useContext(ThemeContext);
+  const { setIsAuthModalOpen } = useContext(AuthModalContext);
   return (
     <nav className={isDark ? "navbar dark" : "navbar"}>
       <div className="nav-container">
@@ -29,11 +31,11 @@ const Navbar = () => {
           <div>
             <a href="/categories">Categories</a>
           </div>
-          <div className="login">
+          <div className="login" onClick={() => setIsAuthModalOpen(true)}>
             <span className="user-icon">
               <FaUser />
             </span>
-            Login
+            <span>Login</span>
           </div>
           <button className="icon">
             <AiOutlineShoppingCart />

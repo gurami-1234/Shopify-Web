@@ -1,0 +1,87 @@
+.auth-modal-back {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.auth-modal-back .auth-modal {
+  width: 400px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+}
+.auth-modal-back .auth-modal .close-btn {
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.auth-modal-back .auth-modal .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.auth-modal-back .auth-modal .title p {
+  font-size: 1.5rem;
+}
+
+.auth-modal-back .auth-modal .info-input {
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+}
+.auth-modal-back .auth-modal .info-input .icon {
+  font-size: 1.1rem;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.auth-modal-back .auth-modal .info-input .input {
+  width: 350px;
+  height: 35px;
+  font-size: 1rem;
+  padding: 5px 0;
+  padding-left: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.auth-modal-back .auth-modal .info-input .input::placeholder {
+  color: rgb(193, 193, 193);
+}
+
+.auth-modal-back .auth-modal .button-place {
+  margin: 0 auto;
+  width: 379px;
+}
+.auth-modal-back .auth-modal .button-place .button {
+  width: 100%;
+  height: 35px;
+  background-color: #3b82f6;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-modal-back .auth-modal div.size {
+  margin: 10px auto;
+}
