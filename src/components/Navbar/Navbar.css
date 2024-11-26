@@ -63,6 +63,15 @@
       .login {
         cursor: pointer;
       }
+      .log-out-btn {
+        width: max-content;
+        height: 30px;
+        font-size: 1.1rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+      }
       a {
         text-decoration: none;
         color: black;
