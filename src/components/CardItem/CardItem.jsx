@@ -1,5 +1,4 @@
 import React from "react";
-import image from "images/thumbnail.png";
 import "./CardItem.css";
 import { Link } from "react-router-dom";
 const CardItem = ({

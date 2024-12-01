@@ -15,6 +15,16 @@ export const getSingleProduct = async (id) => {
   return resp.data;
 };
 
+export const getAllCategories = async () => {
+  const resp = await axios.get("products/categories");
+  return resp.data;
+};
+
+export const getProductsByCategory = async (category_slug) => {
+  const resp = await axios.get(`products/category/${category_slug}`);
+  return resp.data.products;
+};
+
 export const getAccessTokenFromAPI = async (body) => {
   const resp = await axios.post("auth/login", body);
   return resp.data.accessToken;
