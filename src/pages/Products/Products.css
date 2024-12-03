@@ -1,0 +1,19 @@
+.page-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.page-btns .page-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(19, 78, 19);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.page-btns .page-btn:hover {
+  background-color: rgb(27, 119, 27);
+}
